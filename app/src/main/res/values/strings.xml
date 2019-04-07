@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Movie Info</string>
+    <string name="api_key">aa4f15bcc6e290d8e303966fbd753851</string>
+    <string name="base_path_poster">https://image.tmdb.org/t/p/w500</string>
+</resources>
