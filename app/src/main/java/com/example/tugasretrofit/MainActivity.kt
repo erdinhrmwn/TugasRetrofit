@@ -1,7 +1,7 @@
 package com.example.tugasretrofit
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
 import android.util.Log
 import android.widget.Toast
@@ -15,10 +15,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.os.AsyncTask
-import android.widget.ImageView
 
 
 class MainActivity : AppCompatActivity() {
@@ -69,7 +65,6 @@ class MainActivity : AppCompatActivity() {
                 if (response != null) {
                     var originalTitle : String? = response.body()?.originalTitle
                     var posterPath : String? = response.body()?.posterPath
-                    var homepage : String? = response.body()?.homepage
 
                     collapseToolbar.title = originalTitle
                     if (posterPath == null) {
